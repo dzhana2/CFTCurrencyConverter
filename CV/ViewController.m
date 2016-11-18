@@ -24,7 +24,7 @@
 - (void) tapButtonConvert:(NSString *) value {
     result = value.floatValue * CONVERT;
     //NSLog(@"converted value %2f", result);
-    resultLabel.text = [NSString stringWithFormat:@"%2f", result];
+    //resultLabel.text = [NSString stringWithFormat:@"%2f", result];
 }
 
 - (IBAction) tapButtonChangeMoney {
@@ -34,7 +34,6 @@
 }
 
 - (void) didSelect {
-    return;
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string; {

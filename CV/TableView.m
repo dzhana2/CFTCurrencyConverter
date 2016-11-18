@@ -17,7 +17,8 @@
 
     id<protocolForCloseChangeWindow> delegate;
     IBOutlet UITableView * currencyTable;
-    
+    CurrencyDatasource * dataSource;
+
 }
 
 -(TableView *) initWithDelegate:(id<protocolForCloseChangeWindow>)aDelegate {
@@ -36,12 +37,18 @@
 
 -(void) doneTapped {
     
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"Окно выбора валюты";
+    dataSource = [[CurrencyDatasource alloc]init];
+    currencyTable.dataSource = dataSource;
+    currencyTable.delegate = dataSource;
+    [self configureNavigationItem];
+    
 }
 
 - (void)didReceiveMemoryWarning {

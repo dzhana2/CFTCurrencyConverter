@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "protocolForCloseChangeWindow.h"
+#import "CurrencyDatasource.h"
 
-@interface TableView : UIViewController
-@property(strong, nonatomic) NSArray *dataSourse;
+@interface TableView : UIViewController <UITableViewDelegate>
+
 -(TableView *) initWithDelegate: (id<protocolForCloseChangeWindow>)aDelegate;
 
 @end
