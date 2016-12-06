@@ -1,29 +1,38 @@
 //
-//  TableView.m
+//  TableViewController.m
 //  CV
 //
 //  Created by Student on 05.11.16.
 //  Copyright © 2016 Student03.FS.ru.CFT. All rights reserved.
 //
 
-#import "TableView.h"
+#import "TableViewController.h"
+#import "AppContext.h"
 
 
-@interface TableView ()
+@interface TableViewController ()
 
 @end
 
-@implementation TableView {
+@implementation TableViewController {
 
     id<protocolForCloseChangeWindow> delegate;
     IBOutlet UITableView * currencyTable;
     CurrencyDatasource * dataSource;
+    
+    void(^completionHandler)(Currency *currency);
 
 }
 
--(TableView *) initWithDelegate:(id<protocolForCloseChangeWindow>)aDelegate {
+/*-(TableViewController *) initWithDelegate:(id<protocolForCloseChangeWindow>)aDelegate {
     self = [super initWithNibName:nil bundle:nil];
     delegate = aDelegate;
+    return self;
+}*/
+
+-(instancetype) initWithAppContext:(AppContext *) appContext {
+    self = [super initWithNibName:nil bundle:nil];
+    _appContext = appContext;
     return self;
 }
 
@@ -36,34 +45,17 @@
 }
 
 -(void) doneTapped {
-    
     [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    self.title = @"Окно выбора валюты";
-    dataSource = [[CurrencyDatasource alloc]init];
+    self.title = @"Выбор валюты";
+    dataSource = [[CurrencyDatasource alloc]initWithContext:_appContext];
     currencyTable.dataSource = dataSource;
     currencyTable.delegate = dataSource;
     [self configureNavigationItem];
     
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

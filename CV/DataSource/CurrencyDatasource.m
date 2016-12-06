@@ -7,21 +7,22 @@
 //
 
 #import "CurrencyDatasource.h"
+#import "AppContext.h"
+#import "RequestHelper.h"
 
 static NSString * REUSE_ID = @"reuseID";
 
 @implementation CurrencyDatasource {
-    CurrencyManager * currencyManager;
 }
 
-- (instancetype) init {
+- (instancetype) initWithContext:(AppContext *) appContext {
     self = [super init];
-    currencyManager = [[CurrencyManager alloc]init];
+    _currencyManager = appContext.currencyManager;
     return self;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [currencyManager.arrayWithCurrencies count];
+    return [_currencyManager.arrayWithCurrencies count];
 }
 
 
@@ -31,14 +32,21 @@ static NSString * REUSE_ID = @"reuseID";
     if (nil == cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier: REUSE_ID];
     }
-    Currency * result = [currencyManager.arrayWithCurrencies objectAtIndex:indexPath.row];
-    cell.textLabel.text = result.name;
-    cell.detailTextLabel.text = result.code;
+    Currency * result = [_currencyManager.arrayWithCurrencies objectAtIndex:indexPath.row];
+    //if (_currencyManager.baseCurrency.code == result.code) {
+        cell.textLabel.text = result.name;
+        cell.detailTextLabel.text = result.code;
+    RequestHelper * requestHelper = [[RequestHelper alloc] initWithAppContext:(SettingsReader *)^appConfig apiMethod:(NSString *)apiMethod params:(NSDictionary *) params;
+    
+    
+    
+   // }
+    
     return cell;
 }
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    _selectedCurrency = [currencyManager.arrayWithCurrencies objectAtIndex:indexPath.row];
+    _selectedCurrency = [_currencyManager.arrayWithCurrencies objectAtIndex:indexPath.row];
 }
 
 @end

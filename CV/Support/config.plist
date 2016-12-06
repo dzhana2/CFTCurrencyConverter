@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>currencyList</key>
+	<array>
+		<array>
+			<string>USD</string>
+			<string>Доллар США</string>
+		</array>
+		<array>
+			<string>RUB</string>
+			<string>Рубль</string>
+		</array>
+		<array>
+			<string>GBP</string>
+			<string>Фунт стерлингов</string>
+		</array>
+		<array>
+			<string>AUD</string>
+			<string>Австралийский доллар</string>
+		</array>
+	</array>
+	<key>exchangeRateURL</key>
+	<string>http://api.fixer.io</string>
+	<key>useRemoteExchangeRates</key>
+	<true/>
+	<key>baseCurrencyCode</key>
+	<string>RUB</string>
+	<key>baseCurrencyName</key>
+	<string>Российский рубль</string>
+</dict>
+</plist>

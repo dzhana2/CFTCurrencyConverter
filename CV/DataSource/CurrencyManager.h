@@ -7,9 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Currency.h"
 
 @interface CurrencyManager : NSObject
 
 @property (nonatomic, readonly) NSMutableArray * arrayWithCurrencies;
+@property (nonatomic, readonly) Currency * baseCurrency;
+@property (nonatomic, readonly) Currency * selectedCurrency;
+
+-(instancetype) initWithConfigFile:(NSString *) configFileName;
+-(instancetype) init NS_UNAVAILABLE;
 
 @end

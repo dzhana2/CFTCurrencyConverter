@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F6E9A201DCDCF75008E83AB /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6E9A1F1DCDCF75008E83AB /* ViewController.xib */; };
-		3F6E9A261DCDE52E008E83AB /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E9A241DCDE52E008E83AB /* TableView.m */; };
-		3F6E9A271DCDE52E008E83AB /* TableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6E9A251DCDE52E008E83AB /* TableView.xib */; };
+		3F11BF2F1DE31D6900B2A1F5 /* RequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F11BF2E1DE31D6900B2A1F5 /* RequestHelper.m */; };
+		3F4262261DF2CEBC00889860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4262251DF2CEBC00889860 /* LaunchScreen.storyboard */; };
+		3F42622A1DF2D3C400889860 /* SettingsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4262291DF2D3C400889860 /* SettingsReader.m */; };
+		3F42622D1DF2E13B00889860 /* AppCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F42622C1DF2E13B00889860 /* AppCreator.m */; };
+		3F4262311DF2ECC100889860 /* AppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4262301DF2ECC100889860 /* AppContext.m */; };
+		3F6E9A261DCDE52E008E83AB /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E9A241DCDE52E008E83AB /* TableViewController.m */; };
+		3F6E9A271DCDE52E008E83AB /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6E9A251DCDE52E008E83AB /* TableViewController.xib */; };
+		3FBA56131DE97F2200340A6F /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FBA56121DE97F2200340A6F /* config.plist */; };
+		3FBA56201DE9834500340A6F /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA561E1DE9834500340A6F /* HistoryViewController.m */; };
+		3FBA56211DE9834500340A6F /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FBA561F1DE9834500340A6F /* HistoryViewController.xib */; };
+		3FBA56381DE9943800340A6F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA56361DE9943800340A6F /* MainViewController.m */; };
+		3FBA56391DE9943800340A6F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FBA56371DE9943800340A6F /* MainViewController.xib */; };
+		3FE3F6E81DD70BB10028EBAA /* CurrencyDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE3F6E71DD70BB10028EBAA /* CurrencyDatasource.m */; };
+		3FE3F6EB1DD713690028EBAA /* CurrencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE3F6EA1DD713690028EBAA /* CurrencyManager.m */; };
+		3FE3F6EE1DD713810028EBAA /* Currency.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE3F6ED1DD713810028EBAA /* Currency.m */; };
 		3FFF69BD1DC4944700DB87E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF69BC1DC4944700DB87E7 /* main.m */; };
 		3FFF69C01DC4944700DB87E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF69BF1DC4944700DB87E7 /* AppDelegate.m */; };
-		3FFF69C31DC4944700DB87E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF69C21DC4944700DB87E7 /* ViewController.m */; };
-		3FFF69C81DC4944700DB87E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF69C71DC4944700DB87E7 /* Assets.xcassets */; };
-		3FFF69CB1DC4944700DB87E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF69C91DC4944700DB87E7 /* LaunchScreen.storyboard */; };
 		3FFF69D61DC4944800DB87E7 /* CVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF69D51DC4944800DB87E7 /* CVTests.m */; };
 		3FFF69E11DC4944800DB87E7 /* CVUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF69E01DC4944800DB87E7 /* CVUITests.m */; };
 /* End PBXBuildFile section */
@@ -37,19 +46,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F6E9A1F1DCDCF75008E83AB /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
-		3F6E9A231DCDE52E008E83AB /* TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableView.h; sourceTree = "<group>"; };
-		3F6E9A241DCDE52E008E83AB /* TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableView.m; sourceTree = "<group>"; };
-		3F6E9A251DCDE52E008E83AB /* TableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableView.xib; sourceTree = "<group>"; };
+		3F11BF2D1DE31D6900B2A1F5 /* RequestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestHelper.h; sourceTree = "<group>"; };
+		3F11BF2E1DE31D6900B2A1F5 /* RequestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestHelper.m; sourceTree = "<group>"; };
+		3F4262251DF2CEBC00889860 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F4262281DF2D3C400889860 /* SettingsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsReader.h; path = ../SettingsReader.h; sourceTree = "<group>"; };
+		3F4262291DF2D3C400889860 /* SettingsReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsReader.m; path = ../SettingsReader.m; sourceTree = "<group>"; };
+		3F42622B1DF2E13B00889860 /* AppCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCreator.h; sourceTree = "<group>"; };
+		3F42622C1DF2E13B00889860 /* AppCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCreator.m; sourceTree = "<group>"; };
+		3F42622F1DF2ECC100889860 /* AppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppContext.h; sourceTree = "<group>"; };
+		3F4262301DF2ECC100889860 /* AppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppContext.m; sourceTree = "<group>"; };
+		3F6E9A231DCDE52E008E83AB /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		3F6E9A241DCDE52E008E83AB /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		3F6E9A251DCDE52E008E83AB /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		3F6E9A281DCDEFA4008E83AB /* protocolForCloseChangeWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = protocolForCloseChangeWindow.h; sourceTree = "<group>"; };
+		3FBA56121DE97F2200340A6F /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		3FBA561D1DE9834500340A6F /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		3FBA561E1DE9834500340A6F /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		3FBA561F1DE9834500340A6F /* HistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		3FBA56351DE9943800340A6F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		3FBA56361DE9943800340A6F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		3FBA56371DE9943800340A6F /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3FE3F6E61DD70BB10028EBAA /* CurrencyDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyDatasource.h; sourceTree = "<group>"; };
+		3FE3F6E71DD70BB10028EBAA /* CurrencyDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyDatasource.m; sourceTree = "<group>"; };
+		3FE3F6E91DD713690028EBAA /* CurrencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyManager.h; sourceTree = "<group>"; };
+		3FE3F6EA1DD713690028EBAA /* CurrencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyManager.m; sourceTree = "<group>"; };
+		3FE3F6EC1DD713810028EBAA /* Currency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Currency.h; sourceTree = "<group>"; };
+		3FE3F6ED1DD713810028EBAA /* Currency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Currency.m; sourceTree = "<group>"; };
 		3FFF69B81DC4944700DB87E7 /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFF69BC1DC4944700DB87E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3FFF69BE1DC4944700DB87E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3FFF69BF1DC4944700DB87E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3FFF69C11DC4944700DB87E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3FFF69C21DC4944700DB87E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3FFF69C71DC4944700DB87E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3FFF69CA1DC4944700DB87E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FFF69CC1DC4944700DB87E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FFF69D11DC4944800DB87E7 /* CVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFF69D51DC4944800DB87E7 /* CVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CVTests.m; sourceTree = "<group>"; };
@@ -84,6 +110,90 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F11BF301DE31F4700B2A1F5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3F4262271DF2D15700889860 /* LaunchScreen */,
+				3FBA562D1DE9903600340A6F /* MainScreen */,
+				3F11BF321DE31F6A00B2A1F5 /* TableScreen */,
+				3FBA56141DE97FEC00340A6F /* HistoryScreen */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		3F11BF321DE31F6A00B2A1F5 /* TableScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3F6E9A231DCDE52E008E83AB /* TableViewController.h */,
+				3F6E9A241DCDE52E008E83AB /* TableViewController.m */,
+				3F6E9A251DCDE52E008E83AB /* TableViewController.xib */,
+			);
+			name = TableScreen;
+			sourceTree = "<group>";
+		};
+		3F4262271DF2D15700889860 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3F4262251DF2CEBC00889860 /* LaunchScreen.storyboard */,
+			);
+			name = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		3F42622E1DF2E48D00889860 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3F42622B1DF2E13B00889860 /* AppCreator.h */,
+				3F42622C1DF2E13B00889860 /* AppCreator.m */,
+				3F42622F1DF2ECC100889860 /* AppContext.h */,
+				3F4262301DF2ECC100889860 /* AppContext.m */,
+				3F4262281DF2D3C400889860 /* SettingsReader.h */,
+				3F4262291DF2D3C400889860 /* SettingsReader.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		3F4CFBFE1DDF35290085B851 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				3FE3F6E61DD70BB10028EBAA /* CurrencyDatasource.h */,
+				3FE3F6E71DD70BB10028EBAA /* CurrencyDatasource.m */,
+				3FE3F6E91DD713690028EBAA /* CurrencyManager.h */,
+				3FE3F6EA1DD713690028EBAA /* CurrencyManager.m */,
+				3FE3F6EC1DD713810028EBAA /* Currency.h */,
+				3FE3F6ED1DD713810028EBAA /* Currency.m */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		3FBA56141DE97FEC00340A6F /* HistoryScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3FBA561D1DE9834500340A6F /* HistoryViewController.h */,
+				3FBA561E1DE9834500340A6F /* HistoryViewController.m */,
+				3FBA561F1DE9834500340A6F /* HistoryViewController.xib */,
+			);
+			name = HistoryScreen;
+			sourceTree = "<group>";
+		};
+		3FBA562D1DE9903600340A6F /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3FBA56351DE9943800340A6F /* MainViewController.h */,
+				3FBA56361DE9943800340A6F /* MainViewController.m */,
+				3FBA56371DE9943800340A6F /* MainViewController.xib */,
+			);
+			name = MainScreen;
+			sourceTree = "<group>";
+		};
+		3FE390201DE854F9005BE50D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3F11BF2D1DE31D6900B2A1F5 /* RequestHelper.h */,
+				3F11BF2E1DE31D6900B2A1F5 /* RequestHelper.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 		3FFF69AF1DC4944700DB87E7 = {
 			isa = PBXGroup;
 			children = (
@@ -107,18 +217,13 @@
 		3FFF69BA1DC4944700DB87E7 /* CV */ = {
 			isa = PBXGroup;
 			children = (
+				3F42622E1DF2E48D00889860 /* Application */,
+				3F4CFBFE1DDF35290085B851 /* DataSource */,
+				3F11BF301DE31F4700B2A1F5 /* Screens */,
+				3FE390201DE854F9005BE50D /* Network */,
 				3FFF69BE1DC4944700DB87E7 /* AppDelegate.h */,
 				3FFF69BF1DC4944700DB87E7 /* AppDelegate.m */,
-				3FFF69C11DC4944700DB87E7 /* ViewController.h */,
-				3FFF69C21DC4944700DB87E7 /* ViewController.m */,
-				3F6E9A1F1DCDCF75008E83AB /* ViewController.xib */,
-				3F6E9A231DCDE52E008E83AB /* TableView.h */,
-				3F6E9A241DCDE52E008E83AB /* TableView.m */,
-				3F6E9A251DCDE52E008E83AB /* TableView.xib */,
 				3F6E9A281DCDEFA4008E83AB /* protocolForCloseChangeWindow.h */,
-				3FFF69C71DC4944700DB87E7 /* Assets.xcassets */,
-				3FFF69C91DC4944700DB87E7 /* LaunchScreen.storyboard */,
-				3FFF69CC1DC4944700DB87E7 /* Info.plist */,
 				3FFF69BB1DC4944700DB87E7 /* Supporting Files */,
 			);
 			path = CV;
@@ -127,6 +232,8 @@
 		3FFF69BB1DC4944700DB87E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3FFF69CC1DC4944700DB87E7 /* Info.plist */,
+				3FBA56121DE97F2200340A6F /* config.plist */,
 				3FFF69BC1DC4944700DB87E7 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -212,6 +319,9 @@
 		3FFF69B01DC4944700DB87E7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Student03.FS.ru.CFT;
 				TargetAttributes = {
@@ -256,10 +366,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FFF69CB1DC4944700DB87E7 /* LaunchScreen.storyboard in Resources */,
-				3FFF69C81DC4944700DB87E7 /* Assets.xcassets in Resources */,
-				3F6E9A271DCDE52E008E83AB /* TableView.xib in Resources */,
-				3F6E9A201DCDCF75008E83AB /* ViewController.xib in Resources */,
+				3FBA56391DE9943800340A6F /* MainViewController.xib in Resources */,
+				3F6E9A271DCDE52E008E83AB /* TableViewController.xib in Resources */,
+				3F4262261DF2CEBC00889860 /* LaunchScreen.storyboard in Resources */,
+				3FBA56131DE97F2200340A6F /* config.plist in Resources */,
+				3FBA56211DE9834500340A6F /* HistoryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,10 +395,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FFF69C31DC4944700DB87E7 /* ViewController.m in Sources */,
-				3F6E9A261DCDE52E008E83AB /* TableView.m in Sources */,
+				3F42622A1DF2D3C400889860 /* SettingsReader.m in Sources */,
+				3F6E9A261DCDE52E008E83AB /* TableViewController.m in Sources */,
+				3FBA56201DE9834500340A6F /* HistoryViewController.m in Sources */,
+				3FE3F6EB1DD713690028EBAA /* CurrencyManager.m in Sources */,
+				3FBA56381DE9943800340A6F /* MainViewController.m in Sources */,
+				3F4262311DF2ECC100889860 /* AppContext.m in Sources */,
+				3F11BF2F1DE31D6900B2A1F5 /* RequestHelper.m in Sources */,
 				3FFF69C01DC4944700DB87E7 /* AppDelegate.m in Sources */,
 				3FFF69BD1DC4944700DB87E7 /* main.m in Sources */,
+				3FE3F6EE1DD713810028EBAA /* Currency.m in Sources */,
+				3F42622D1DF2E13B00889860 /* AppCreator.m in Sources */,
+				3FE3F6E81DD70BB10028EBAA /* CurrencyDatasource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,17 +440,6 @@
 			targetProxy = 3FFF69DD1DC4944800DB87E7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3FFF69C91DC4944700DB87E7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3FFF69CA1DC4944700DB87E7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3FFF69E31DC4944800DB87E7 /* Debug */ = {

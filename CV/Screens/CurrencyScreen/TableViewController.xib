@@ -14,24 +14,25 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oTb-bS-JrG">
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <connections>
-                        <outlet property="dataSource" destination="i5M-Pr-FkT" id="Y8v-4y-JVe"/>
-                        <outlet property="delegate" destination="i5M-Pr-FkT" id="IlP-uq-fZ8"/>
-                    </connections>
-                </tableView>
+                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="95m-Yr-XgW">
+                    <frame key="frameInset" width="378" height="669"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oTb-bS-JrG">
+                            <frame key="frameInset" width="378" height="669"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="i5M-Pr-FkT" id="Y8v-4y-JVe"/>
+                                <outlet property="delegate" destination="i5M-Pr-FkT" id="IlP-uq-fZ8"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="oTb-bS-JrG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SLG-GI-0HK"/>
-                <constraint firstItem="oTb-bS-JrG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Umi-Te-udF"/>
-                <constraint firstAttribute="trailing" secondItem="oTb-bS-JrG" secondAttribute="trailing" id="b0C-Jd-SCp"/>
-                <constraint firstAttribute="bottom" secondItem="oTb-bS-JrG" secondAttribute="bottom" id="bhf-ZQ-B6R"/>
-            </constraints>
             <point key="canvasLocation" x="26.5" y="52.5"/>
         </view>
     </objects>

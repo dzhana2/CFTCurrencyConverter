@@ -7,12 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewController.h"
+#import "AppCreator.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
-
+@property (nonatomic, readonly) AppCreator * appCreator;
 
 @end
 
